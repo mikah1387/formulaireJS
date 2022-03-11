@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+background: cadetblue;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
+
+}
+
+.container{
+
+    background: white;
+    border-radius: 5px;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.header{
+
+    background: rgb(223, 221, 221);
+    padding: 20px 40px;
+    border-bottom: 1px solid grey;   
+}
+h2{
+
+    margin: 0;
+}
+.form{
+
+    padding: 30px 40px;
+}
+.form-control{
+  position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+}
+.form-control label{
+
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+   border-radius: 3px;
+   border: 2px solid grey;
+   display: block;
+   padding: 10px;
+   width: 100%;
+   font-family: inherit;
+
+}
+.form-control i{
+
+    position: absolute;
+    top: 37px;
+    left: 300px;
+    visibility: hidden;
+    
+}
+.form-control i.fa-exclamation{
+
+    position: absolute;
+    top: 37px;
+    left: 325px;
+    
+}
+.form-control small{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.form .button{
+
+    background:cadetblue ;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid cadetblue;
+    border-radius: 3px;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+}
+
+.form-control.success input{
+
+border-color: rgb(20, 100, 20);
+
+}
+.form-control.error input{
+
+    border-color: rgb(163, 38, 7);
+    animation: animation 0.4s;
+
+    
+    }
+
+    .form-control.success i.fa-check-circle{
+
+        color: rgb(20, 100, 20);
+        visibility: visible;
+        
+        }
+        .form-control.error i.fa-exclamation{
+
+     color: rgb(163, 38, 7);
+      visibility: visible;
+            
+         }
+         .form-control.error small{
+
+            color: rgb(163, 38, 7);
+             visibility: visible;
+             transition: all 0.3s;
+                   
+                }
+
+       @keyframes animation {
+
+        0%{
+             transform: translateX(5px);
+        }
+        50%{
+            transform: translateX(-5px);
+        }
+        100%{
+            transform:translateX(0);
+        }
+           
+       }         
+
+        
